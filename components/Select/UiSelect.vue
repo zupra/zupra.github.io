@@ -3,10 +3,10 @@
   input.Ui-select_input(:class="[size]", :value="!selectedOption ? placeholder : selectedOption.label", readonly, @click.stop="isOpen=!isOpen")
 
   transition(v-if="ripple" name="rippleEffect")
-    ul.Ui-select_list.listNav_Card(v-show="isOpen")
+    ul.Ui-select_list.Card_list(v-show="isOpen")
       li(v-for="(option,i) in options", @click="setOption(option,i)", :class="{selected: i == selected}")
         | {{ option.label }}
-  ul.Ui-select_list.listNav_Card(
+  ul.Ui-select_list.Card_list(
     v-else
     v-show="isOpen"
   )
@@ -74,8 +74,6 @@ export default {
     cursor pointer
     padding-right 22px !important
   &_list
-    // reset .Card
-    margin 0
     position absolute
     z-index 1
     width 100%

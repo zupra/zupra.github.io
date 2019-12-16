@@ -26,7 +26,7 @@
           dd {{User.registered.date.split('T')[0]}}
           dt login
           dd {{User.login.username}}
-      .flex.y_center.x_end
+      .flex.y_center.x_end.p_2
         .btn.flat action
         .btn.ml_3 ОК
 

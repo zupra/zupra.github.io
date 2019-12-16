@@ -55,7 +55,7 @@ export default {
     // border-radius .3em .3em 0 0
     // box-shadow 0 0 .3rem rgba(#000, .3)
     color #477dca // #26a69a
-    border-bottom-color #477dca
+    // border-bottom-color #477dca
   &__label
     padding 0 .5rem
     cursor pointer
@@ -68,8 +68,8 @@ export default {
     position absolute
     // top 100%
     z-index 1
-    border 1px solid #3498db
-    width max-content
+    // border 1px solid #3498db
+    width min-content
     pre
       width 300px
       margin 0

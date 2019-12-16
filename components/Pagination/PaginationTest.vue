@@ -21,7 +21,7 @@
           dd {{slotProps.itemData.registered.date.split('T')[0]}}
           dt login
           dd {{slotProps.itemData.login.username}}
-      .flex.y_center.x_end
+      .flex.y_center.x_end.p_2
         .btn.flat action
         .btn.ml_3 ОК
 
@@ -36,7 +36,7 @@
         width="240"
         :src="'https://picsum.photos/240/160?image='+slotProps.itemData"
       )
-      .flex.y_center.x_end
+      .flex.y_center.x_end.p_2
         .btn.flat.red action
         .btn.ml_3 ОК
 

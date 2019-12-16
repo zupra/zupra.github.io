@@ -3,21 +3,21 @@ $CLR()
   &.red
     background $red
     &:hover
-      background $red + 20%
+      background $red - 35
   &.green
     background $green
     &:hover
-      background $green + 20
+      background $green - 35
   &.orange
     background $orange
     &:hover
-      background $orange + 20% // #eea236 - 10
+      background $orange - 35 // #eea236 - 10
 
 $fill_Mod()
   &.fill
     &.lite
       color $link
-      background snow
+      background #FFF //snow
       &:hover
         text-decoration underline
     $CLR()
@@ -52,28 +52,29 @@ $flat_Mod()
 $outline_Mod()
   &.outline
     // border 2px solid currentColor
-    border .16em solid currentColor
+    // border .16em solid currentColor
+    border 1px solid currentColor
     transition none // background 0.3s
-    background snow
+    background #FFF // snow
     color #546e7a
     &:hover
       color #FFF !important
       border-color transparent
       background #37474f
     &.blue
-      color $blue
+      color $blue - 30
       &:hover
         background $blue
     &.red
-      color $red
+      color $red - 30
       &:hover
         background $red
     &.green
-      color $green
+      color $green - 30
       &:hover
         background $green
     &.orange
-      color $orange
+      color $orange - 30
       &:hover
         background $orange
 
@@ -86,7 +87,9 @@ $outline_Mod()
   &.rounded
     border-radius 2em
 
-.btn_icon, .btn, button
+.btn_icon,
+.btn,
+button
   display inline-flex
   align-items center
   justify-content center
@@ -98,7 +101,7 @@ $outline_Mod()
   background $blue
   color #FFF
   &:hover
-    background $blue + 20
+    background $blue - 20%
   // &:active
   //   transform translateY(2px)
 
@@ -119,6 +122,7 @@ $outline_Mod()
   $size_Mod()
 
 // icon
-.btn, button
+.btn,
+button
   .icon
     margin-right .5em

@@ -300,54 +300,56 @@ section
             td data_#{i+1}
   <divider title="Typography" />
   h1 Typography
-  .Tag textList
-  ol.textList
-    li Lorem ipsum dolor sit amet consectetur
-    li Lorem ipsum dolor sit amet consectetur
-    li Lorem ipsum dolor sit amet consectetur
-    ol
-      li Lorem ipsum dolor sit amet consectetur
-      li Lorem ipsum dolor sit amet consectetur
-      li Lorem ipsum dolor sit amet consectetur
-  ul.textList
-    li Lorem ipsum dolor sit amet consectetur
-    li Lorem ipsum dolor sit amet consectetur
-    li Lorem ipsum dolor sit amet consectetur
 
-  //Text
-  .Tag h1
-  h1 Lorem ipsum dolor sit amet quos dolorem recusandae deleniti quasi
-  .Tag h2
-  h2 Lorem ipsum dolor sit amet quos dolorem recusandae deleniti quasi
-  .Tag h3
-  h3 Lorem ipsum dolor sit amet quos dolorem recusandae deleniti quasi
-  .Tag h4
-  h4 Lorem ipsum dolor sit amet quos dolorem recusandae deleniti quasi
-  .Tag h5
-  h5 Lorem ipsum dolor sit amet quos dolorem recusandae deleniti quasi
-  .Tag p
-  p Lorem ipsum dolor &nbsp
-    span.Tag b
-    | <b>sit amet consectetur</b>
-    span.Tag /b
-    | &nbsp adipisicing elit . &nbsp
-    span.Tag em
-    | <em>Blanditiis explicabo</em>
-    span.Tag /em
-    | &nbsp porro, &nbsp
-    span.Tag s
-    | <s>voluptatum laborum</s>
-    span.Tag /s
-    | &nbsp cumque molestiae quibusdam accusamus sed, quam sint ducimus libero distinctio? Dolore laborum, &nbsp
-    span.Tag strong
-    | <strong>quos dolorem</strong>
-    span.Tag /strong
-    | &nbsp recusandae deleniti quasi.
-  p Lorem ipsum dolor sit, amet consectetur <a href="#">link</a> adipisicing elit. Voluptate non <a href="#">ab dicta iure</a> quibusdam deserunt assumenda nulla commodi accusamus numquam, aliquam veniam saepe accusantium nostrum?
-  hr
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere soluta quia enim incidunt, et possimus deleniti natus esse, assumenda tempore. Cupiditate recusandae impedit est voluptate deleniti ab, doloremque minima.  Minus quo odio dolore deleniti eos facere distinctio reprehenderit, architecto quos, nam similique a eaque quas at quis? Cumque alias totam nemo!
-  p Nisi ipsam consequuntur qui suscipit voluptatem at mollitia ipsum, ab dolorum omnis doloribus ratione numquam cum in fuga nulla modi illo earum. Vitae tempora, sint dolore omnis architecto earum rem incidunt laboriosam perferendis, pariatur deserunt quis quasi at voluptatem voluptas? Error et praesentium numquam. Maiores laudantium voluptates ea? Blanditiis ullam vel veritatis non reiciendis veniam atque perspiciatis aliquam. Tempore, rem quos!
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, totam! Nemo quibusdam suscipit perspiciatis illo nesciunt, labore quidem, laudantium quam, vero asperiores modi doloribus delectus nobis quo a. Ratione, doloribus.Delectus adipisci repudiandae, deserunt, cumque laborum vero quae ad doloremque molestias harum veritatis, eveniet ducimus? Distinctio asperiores, doloremque alias, animi nemo praesentium quaerat quis ipsam porro, ab aut eveniet provident!Odio quia, consequatur illum doloremque molestias suscipit esse. Autem voluptatum eius quae recusandae illum eligendi sunt nisi obcaecati atque officiis ad magni, ea fugit possimus quidem, velit ipsum quod tempora?Repellat eos quo numquam dolore ipsam quaerat, labore est. Doloribus atque quod omnis provident voluptatibus debitis maiores maxime dolores beatae, reprehenderit possimus excepturi. Eius ab similique laboriosam, maiores reiciendis modi!Sapiente recusandae assumenda eligendi maiores, ab odio nam? Cupiditate pariatur ipsa placeat, quidem reprehenderit accusantium vero architecto deserunt repellendus sapiente, animi rerum autem quas ut. Assumenda perspiciatis sequi reiciendis quos.
+  .Card.px_4.py_2
+    .Tag textList
+    ol.textList
+      li Lorem ipsum dolor sit amet consectetur
+      li Lorem ipsum dolor sit amet consectetur
+      li Lorem ipsum dolor sit amet consectetur
+      ol
+        li Lorem ipsum dolor sit amet consectetur
+        li Lorem ipsum dolor sit amet consectetur
+        li Lorem ipsum dolor sit amet consectetur
+    ul.textList
+      li Lorem ipsum dolor sit amet consectetur
+      li Lorem ipsum dolor sit amet consectetur
+      li Lorem ipsum dolor sit amet consectetur
+
+    //Text
+    .Tag h1
+    h1 Lorem ipsum dolor sit amet quos dolorem recusandae deleniti quasi
+    .Tag h2
+    h2 Lorem ipsum dolor sit amet quos dolorem recusandae deleniti quasi
+    .Tag h3
+    h3 Lorem ipsum dolor sit amet quos dolorem recusandae deleniti quasi
+    .Tag h4
+    h4 Lorem ipsum dolor sit amet quos dolorem recusandae deleniti quasi
+    .Tag h5
+    h5 Lorem ipsum dolor sit amet quos dolorem recusandae deleniti quasi
+    .Tag p
+    p Lorem ipsum dolor &nbsp
+      span.Tag b
+      | <b>sit amet consectetur</b>
+      span.Tag /b
+      | &nbsp adipisicing elit . &nbsp
+      span.Tag em
+      | <em>Blanditiis explicabo</em>
+      span.Tag /em
+      | &nbsp porro, &nbsp
+      span.Tag s
+      | <s>voluptatum laborum</s>
+      span.Tag /s
+      | &nbsp cumque molestiae quibusdam accusamus sed, quam sint ducimus libero distinctio? Dolore laborum, &nbsp
+      span.Tag strong
+      | <strong>quos dolorem</strong>
+      span.Tag /strong
+      | &nbsp recusandae deleniti quasi.
+    p Lorem ipsum dolor sit, amet consectetur <a href="#">link</a> adipisicing elit. Voluptate non <a href="#">ab dicta iure</a> quibusdam deserunt assumenda nulla commodi accusamus numquam, aliquam veniam saepe accusantium nostrum?
+    hr
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere soluta quia enim incidunt, et possimus deleniti natus esse, assumenda tempore. Cupiditate recusandae impedit est voluptate deleniti ab, doloremque minima.  Minus quo odio dolore deleniti eos facere distinctio reprehenderit, architecto quos, nam similique a eaque quas at quis? Cumque alias totam nemo!
+    p Nisi ipsam consequuntur qui suscipit voluptatem at mollitia ipsum, ab dolorum omnis doloribus ratione numquam cum in fuga nulla modi illo earum. Vitae tempora, sint dolore omnis architecto earum rem incidunt laboriosam perferendis, pariatur deserunt quis quasi at voluptatem voluptas? Error et praesentium numquam. Maiores laudantium voluptates ea? Blanditiis ullam vel veritatis non reiciendis veniam atque perspiciatis aliquam. Tempore, rem quos!
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, totam! Nemo quibusdam suscipit perspiciatis illo nesciunt, labore quidem, laudantium quam, vero asperiores modi doloribus delectus nobis quo a. Ratione, doloribus.Delectus adipisci repudiandae, deserunt, cumque laborum vero quae ad doloremque molestias harum veritatis, eveniet ducimus? Distinctio asperiores, doloremque alias, animi nemo praesentium quaerat quis ipsam porro, ab aut eveniet provident!Odio quia, consequatur illum doloremque molestias suscipit esse. Autem voluptatum eius quae recusandae illum eligendi sunt nisi obcaecati atque officiis ad magni, ea fugit possimus quidem, velit ipsum quod tempora?Repellat eos quo numquam dolore ipsam quaerat, labore est. Doloribus atque quod omnis provident voluptatibus debitis maiores maxime dolores beatae, reprehenderit possimus excepturi. Eius ab similique laboriosam, maiores reiciendis modi!Sapiente recusandae assumenda eligendi maiores, ab odio nam? Cupiditate pariatur ipsa placeat, quidem reprehenderit accusantium vero architecto deserunt repellendus sapiente, animi rerum autem quas ut. Assumenda perspiciatis sequi reiciendis quos.
 </template>
 <script>
 import Divider from '~/components/z_Ui/Divider.vue'

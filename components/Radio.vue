@@ -3,7 +3,7 @@
   .Radio_head
     canvas#audioCanvas(ref="canvas")
     .audioControl(@click="toggle()", :class="isPause ? 'pause' : 'active' ")
-  ul.listNav
+  ul.Card_list
     li(v-for="(item, index) in stations", :class='{ active : index == activeStation }', @click="playItem(item.src, index)") {{item.title}}
   audio(ref="audio", src="", crossorigin="")
 

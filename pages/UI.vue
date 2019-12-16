@@ -3,37 +3,46 @@
 
   <divider title="Цвет" />
 
-  #palette
-    each clr in ['#F44336','#1E88E5','#FDD835', '#CDD9ED']
-      figure
-        div(
-          style="background-color:"+clr
-          data-title="clr"
-        )
-        figcaption #{clr}
+  ResizeVertical.m_auto(height="200px")
+    #palette
+      each clr in ['#F44336','#1E88E5','#FDD835', '#CDD9ED']
+        figure
+          div(
+            style="background-color:"+clr
+          )
+          figcaption #{clr}
 
-  hr
-  #palette
-    each clr in ['#1976d2','rgb(220, 0, 78)']
-      figure
-        div(
-          style="background-color:"+clr
-          data-title="clr"
-        )
-        figcaption #{clr}
+    hr
+    #palette
+      each clr in ['#1976d2','rgb(220, 0, 78)', '#ff1493']
+        figure
+          div(
+            style="background-color:"+clr
+          )
+          figcaption #{clr}
 
-  hr
-  #palette
-    each clr in ['#ed5565','#26a69a','#3498db','#ff9800','#477dca','#dee2e6','#C7CEDE','#3c4858','#34495e','#568DA6']
-      figure
-        div(
-          style="background-color:"+clr
-          data-title="clr"
-        )
-        figcaption #{clr}
+    hr
+    #palette
+      each clr in ['#ed5565','#26a69a','#3498db','#ff9800','#477dca','#dee2e6','#C7CEDE','#3c4858','#34495e','#568DA6']
+        figure
+          div(
+            style="background-color:"+clr
+          )
+          figcaption #{clr}
 
   <divider title="Spacing" />
   Spacing
+
+  div(
+    v-for="v,k in { s2:0.75, s1:0.85,  base:1,   x1:1.125, x2:1.5, x3:1.75, x4:2.25, x5:3, x6:4 }"
+    :style="`font-size: ${v}rem`"
+  )
+    b [{{k}}]
+    | Headline
+
+
+
+
 
   Buttons_group
 
@@ -47,24 +56,24 @@
   UiSelectTest
 
   <divider title="Card" />
-  .Flex_wr
-    .col
+  .flex
+    .mr_5
       .Tag nav>a
-      nav.listNav_Card(style="display: inline-grid")
+      nav.Card_list(style="display: inline-grid")
         each link in ['Mark as important','Create event','Restore contacts']
           a(href="#")= link
         a.active(href="#") Lorem ipsum
-    .col
-      .Tag nav>a
-      nav.listNav_Card(style="display: inline-grid")
-        each item in [1,2,3,4,5]
-          a(href="#") link_#{item}
-    .col
+    .mr_5
       .Tag ul>li
-      ul.listNav_Card(style="display: inline-grid")
+      ul.Card_list(style="display: inline-grid")
         li.active На Волне Yum.fm
         each item in ['Радио Best FM','Радио ENERGY','Rock FM 95.2','Радио ПАССАЖ','Радио Maximum','Авторадио','Зайцев FM']
           li #{item}
+    div
+      .Tag nav>a
+      nav.Card_list(style="display: inline-grid")
+        each item in [1,2,3,4,5]
+          a(href="#") link_#{item}
 
   hr
 
@@ -238,7 +247,7 @@
 
   Dropdown
     .btn.lg(slot="btn") Dropdown menu
-    nav.listNav_Card
+    nav.Card_list
       each link in ['Список игроков','Список пользователей','Mark as important','Create event','Restore contacts']
         a(href="#")= link
       a.active(href="#") Lorem ipsum
@@ -322,6 +331,7 @@ import Divider from '~/components/z_Ui/Divider.vue'
 import Icons from '~/components/z_Ui/Icons.vue'
 import Buttons from '~/components/z_Ui/Buttons.vue'
 import Buttons_group from '~/components/z_Ui/Buttons_group.vue'
+import ResizeVertical from '~/components/z_Ui/ResizeVertical.vue'
 import UiTest from '~/components/UiTest.vue'
 
 
@@ -359,7 +369,8 @@ export default {
     Icons,
     Divider,
     Shadow,
-    Spacing
+    Spacing,
+    ResizeVertical
   }
 }
 </script>

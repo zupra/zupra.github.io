@@ -1,40 +1,42 @@
 <template lang="pug">
 fieldset
   legend UiSelect
-  pre {{options}}
-  p selectedOption:
-    pre {{selectedOption}}
+
+  .flex.x_sb
+    pre {{options}}
+    p selectedOption:
+      pre {{selectedOption}}
 
 
-  .Flex_wr
-    .col
-      .Tag size="sm"
-      UiSelect(
-        :options="options",
-        size="sm"
-        @option="OnSelect($event)"
-      )
-    .col
-      .Tag base
-      UiSelect(
-        :options="options",
-        @option="OnSelect($event)"
-      )
-    .col
-      .Tag size="lg"
-      UiSelect(
-        :options="options",
-        size="lg"
-        @option="OnSelect($event)"
-      )
-    .col
-      .Tag size="xl + ripple"
-      UiSelect(
-        :ripple="true"
-        :options="options",
-        size="xl"
-        @option="OnSelect($event)"
-      )
+    .Flex_col
+      .col
+        .Tag size="sm"
+        UiSelect(
+          :options="options",
+          size="sm"
+          @option="OnSelect($event)"
+        )
+      .col
+        .Tag base
+        UiSelect(
+          :options="options",
+          @option="OnSelect($event)"
+        )
+      .col
+        .Tag size="lg"
+        UiSelect(
+          :options="options",
+          size="lg"
+          @option="OnSelect($event)"
+        )
+      .col
+        .Tag size="xl + ripple"
+        UiSelect(
+          :ripple="true"
+          :options="options",
+          size="xl"
+          @option="OnSelect($event)"
+        )
 
 </template>
 

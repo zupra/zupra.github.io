@@ -14,13 +14,15 @@ s1:   0.85,
 // "1": 1,
 x1:   1.125,
 x2:   1.5,
-x3:   1.875,
+x3:   1.75, // 1.875,
 x4:   2.25,
 x5:   3,
 x6:   4,
-x7:   5
 \*-------------------------------------------*/
-fontSizes = { s2:0.75, s1:0.85,   x1:1.125, x2:1.5, x3:1.875, x4:2.25, x5:3, x6:4, x7:5 }
+
+// ? .btn
+// fontSizes = { xs:0.75, sm:0.85,   lg:1.125, xl:1.5, x1:1.75, x2:2.25, x3:3, x4:4 }
+fontSizes = { s2:0.75, s1:0.85,   x1:1.125, x2:1.5, x3:1.75, x4:2.25, x5:3, x6:4 }
 FontSize(sizes)
   for key, v in sizes
     val = unit(v, rem)
@@ -68,9 +70,19 @@ Margin_dir(sizes, direction)
         val = unit(v, rem)
         &_{key}
           margin-{V} val
+// .m{t|r|b|l} :auto (for Flex)
+// https://codepen.io/melnik909/pen/RwwOxOE
+Margin_auto(direction)
+  for k, v in direction
+    &{k}_auto
+      margin-{v} auto
 .m
+  &_auto
+    margin: auto
+  Margin_auto(direction)
   Margins(marginSpace)
   Margin_dir(marginSpace, direction)
+
 
 
 
